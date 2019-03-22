@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="generic.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="scripts.AddCourse">
+        <methods>
+          <include name="postCondition"/>
+          <include name="generateReport"/>
+          <include name="extentReport"/>
+          <include name="addcourse"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- scripts.AddCourse -->
+      <class name="scripts.Course">
+        <methods>
+          <include name="postCondition"/>
+          <include name="generateReport"/>
+          <include name="courseCheck"/>
+          <include name="extentReport"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- scripts.Course -->
+      <class name="scripts.RegisterOperation">
+        <methods>
+          <include name="postCondition"/>
+          <include name="generateReport"/>
+          <include name="login"/>
+          <include name="extentReport"/>
+          <include name="preCondition"/>
+        </methods>
+      </class> <!-- scripts.RegisterOperation -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

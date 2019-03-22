@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="com.FT.generic.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+     <!-- <class name="scripts.TimeZoneTest"/> -->
+      <class name="com.FT.scripts.RegisterOperation"/> 
+      <class name="com.FT.scripts.Course"/>
+      <class name="com.FT.scripts.TimeFormatTest"/>
+      <class name="com.FT.scripts.AddCourse"/>
+    </classes>
+  </test> 
+</suite> 
